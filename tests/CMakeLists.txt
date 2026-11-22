@@ -10,6 +10,7 @@ add_executable(example
 
 target_link_libraries(example PRIVATE
     doctest
+    "${project_name}"
 )
 
 target_compile_definitions(example PRIVATE

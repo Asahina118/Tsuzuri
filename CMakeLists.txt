@@ -8,8 +8,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 include(CTest)
 
-add_executable("${project_name}"
-    src/main.cpp
+add_library("${project_name}"
+    src/logger.cpp
 )
 
 target_include_directories("${project_name}" PUBLIC

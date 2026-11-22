@@ -1,6 +1,10 @@
+#include "include/tsuzuri/logger.h"
 #include "tests/extern/doctest.h"
 
-TEST_CASE("example")
+using namespace tsuzuri;
+
+TEST_CASE("logger")
 {
-    CHECK(2 + 2 == 4);
+    Logger logger{};
+    logger.log("testing");
 }
